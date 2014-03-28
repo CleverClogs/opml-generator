@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Spreadsheet -&gt; OPML Generator</title>
-  <meta name="author" content="Pamela Fox">
+  <meta name="author" content="Marjolein Hoekstra @CleverClogs">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="http://fonts.googleapis.com/css?family=Francois+One:regular&v1" rel="stylesheet" type="text/css">
   <style>
@@ -15,11 +15,14 @@
 </head>
 <body>
 
-  <h1>Spreadsheet -&gt; OPML Generator</h1>
+  <h1>Spreadsheet -&gt; custom OPML Generator</h1>
 
   <p>An OPML describes a set of RSS feeds, and is a nice way of sharing a
-  set of feeds with the world. You can use this app to generate an OPML
-  based on a public Google Spreadsheet.
+  set of feeds with the world. You can use this app to generate an OPML file
+  based on a public Google Spreadsheet. This specific version of the OPML file 
+  can then be used as the source of a Google Custom Search Engine.
+  Note that this program is based on the original <a href="https://github.com/cleverclogs/opml-generator">OPML Generator script</a> by Pamela Fox. 
+  Full credit goes to her work.
   <ol>
     <li>Create a spreadsheet with columns "title" and "url".
     <li>Publish the spreadsheet by clicking "Share" -> "Publish as a webpage"
@@ -30,18 +33,14 @@
     <input type="text" id="opml-title" style="width:200px">
     <li>Your OPML should now be generated at this URL: <br>
     <input type="text" id="opml-url" readonly style="width:400px">
-    <li>Now you can share that URL with others and they can do exciting
-    things like <a href="http://www.google.com/support/reader/bin/answer.py?hl=en&answer=69982">
-      import it into Google Reader</a>.
+    
   </ol>
   <p>For an example, see this <a href="https://spreadsheets2.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0Ah0xU81penP1dGlQbGZ6Si03M0ZOQTd2ZzRfUmdUTmc&output=html">published spreadsheet</a>
   and the resulting <a href="http://opml-generator.appspot.com/opml?sskey=0Ah0xU81penP1dGlQbGZ6Si03M0ZOQTd2ZzRfUmdUTmc&wsid=od6&title=Recipe%20Feed">OPML</a>.
   </p>
-  <p>Note: This is not a production-level service,
-  it it just a tool I put together for use on my
-  <a href="http://www.primalpaleorecipes.com/">recipe blogs portal</a>.
+  <p>Note: 
   You can deploy your own version of this or modify it for your needs
-  by grabbing the source code from <a href="https://github.com/pamelafox/opml-generator">github</a>.
+  by grabbing the source code from <a href="https://github.com/cleverclogs/opml-generator">github</a>.
   </p>
 
   <script>
