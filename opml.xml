@@ -6,7 +6,7 @@
  <body>
    <outline text="{{ title }}">
   {% for feed in feeds %}
-    <outline title="{{ feed.title|escape }}" xmlUrl="{{ feed.url|escape }}"/>
+    <outline title="{{ feed.title|escape }}" htmlUrl="{{ feed.url|escape }}"/>
   {% endfor %}
   </outline>
  </body>
